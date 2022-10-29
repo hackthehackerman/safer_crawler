@@ -60,13 +60,12 @@ func CrawlSafer(DOTWatermark, bucketSize, numConnections int, dao dao.Dao) (err 
 				cnt, ok := notFound.Load(bucket)
 				if ok {
 					notFound.Store(bucket, cnt.(int)+1)
-					if cnt.(int)+1 == bucketSize {
+					if cnt.(int)+1 == bucketSize && dotNumber > DOTWatermark {
 						terminate = true
 					}
 				} else {
 					notFound.Store(bucket, 1)
 				}
-
 				return
 			}
 

@@ -1,0 +1,6 @@
+db_url: root:password@tcp(localhost:3306)/carrier_leads?parseTime=true
+
+# USDOT numbers are issued sequentialy. And as of 10/28/2023, the latest issued number is within the range of 3970000 - 4000000
+# This number helps the crawler to know when to stop. Right now, the crawler will crawl USDOT sequentially from 0 -> infinity. It stops once 100 continuous usdot number yield no results from safer, and they are larger than dot_watermark.
+dot_watermark: 3970000
+bucket_size: 100

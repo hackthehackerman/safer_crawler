@@ -1,0 +1,7 @@
+version: 1
+packages:
+    - path: "../internal/dao/carrierleads"
+      name: "carrierleads"
+      engine: "mysql"
+      schema: "schema.sql"
+      queries: "query.sql"

@@ -2,6 +2,8 @@
 
 A web crawler to scrape data from the U.S. Department of Transportation Safety and Fitness Electronic Records System ([SAFER](https://safer.fmcsa.dot.gov/)), and store the structured result into a mysql database.
 
+![Screenshot 2022-10-30 at 11 35 54 AM](https://user-images.githubusercontent.com/1932380/198890241-691d379c-cd3f-4c6b-b249-861b10a5d859.png)
+
 ## Set up the database
 
 1. Create a table in the mysql database with the following schema

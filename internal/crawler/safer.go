@@ -37,7 +37,7 @@ func CrawlSafer(DOTWatermark, bucketSize, numConnections int, dao dao.Dao) (err 
 	}
 
 	// map to store number of failed safer fetch in dot range segmented by bucket size.
-	// this is used to detect the upperfound of available dotnumber
+	// this is used to detect the upperbound of available dotnumber
 	notFound := sync.Map{}
 	terminate := false
 	dot := 1

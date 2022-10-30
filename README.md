@@ -97,7 +97,7 @@ CREATE TABLE `fmcsa_carrier_safer` (
 
 ## Performance
 
-As on 10/29/2022, running the crawler on a digital ocean droplet with 2GM ram and 1 AMD vCPU, the cralwer finished in 18 hours and scraped 2,022,837 records. The result database size is at 929 MiB.
+As of 10/29/2022, running the crawler on a digital ocean droplet with 2GM ram and 1 AMD vCPU, the cralwer finished in 18 hours and scraped 2,022,837 records. The result database size is at 929 MiB.
 
 ## Credit
 
